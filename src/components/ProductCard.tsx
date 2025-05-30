@@ -81,12 +81,12 @@ export default function ProductCard({ product }: ProductCardProps) {
               </Button>
             </div>
 
-            <Button onClick={handleAddToCart} className="w-full" disabled={quantity > product.stock}>
+            <Button onClick={handleAddToCart} className="w-full bg-blue-900 hover:bg-blue-900/80 cursor-pointer" disabled={quantity > product.stock}>
               Add to Cart
             </Button>
           </div>
         ) : (
-          <Button disabled className="w-full">
+          <Button disabled className="w-full bg-blue-900/80">
             Out of Stock
           </Button>
         )}

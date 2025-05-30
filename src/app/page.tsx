@@ -6,7 +6,7 @@ import { useCartStore } from "@/store/cartStore"
 import ProductGrid from "@/components/ProductGrid"
 import SearchAndFilters from "@/components/SearchAndFilters"
 import Cart from "@/components/Cart"
-import { ShoppingCart } from "lucide-react"
+import { Loader2, ShoppingCart } from "lucide-react"
 
 export default function Home() {
   const { fetchProducts, loading } = useProductStore()
@@ -21,7 +21,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
+        <Loader2 className="animate-spin text-blue-900" />
       </div>
     )
   }

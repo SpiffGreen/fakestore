@@ -103,7 +103,7 @@ export default function Cart() {
                 <span>${getTotalPrice().toFixed(2)}</span>
               </div>
 
-              <Button onClick={handleCheckout} className="w-full" size="lg">
+              <Button onClick={handleCheckout} className="w-full bg-blue-900 hover:bg-blue-900/80 cursor-pointer" size="lg">
                 Checkout
               </Button>
             </div>
